@@ -1,0 +1,15 @@
+== functions
+   == built in functions
+   == user defined functions
+      -- function statement
+      -- function expression
+      -- callback function
+      -- IIFE
+      -- anonymous functions
+
+== How JS  Engine Execute (js) in memory
+== Hoisting
+== Array
+== String API
+== Date object (self Study)
+----------------------------------------------

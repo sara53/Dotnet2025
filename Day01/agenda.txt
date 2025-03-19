@@ -1,0 +1,109 @@
+== JS History
+== Where to js code written
+== Varaibles
+== Datatypes -- primitve datatype -- referncedatatype
+== Falsy Values & truthy Values
+== Operators
+    -- arithmatic
+    -- logical
+    -- assignment
+    -- comprasion
+== Control Flow
+    -- if -- switch - for -- while - do while (syntax)
+== Communicate with user
+    
+/**
+ * Datatypes
+ * ------------------------------------
+ * == Primitive Datatype
+ * ------------------------------------
+ * == String
+ * == Number
+ * == Boolean
+ * == undefined
+ * == null
+ * -------------------------------------
+ * == Refernce Datatype
+ *  -- Object
+ *-----------Var----------------------------
+    == Reassign With deferenct Datatype
+    == can redeclaration
+ */
+
+/** Falsy Values
+ * -----------------------
+ * == false
+ * == 0
+ * == undefined
+ * == null
+ * == NaN
+ * == ""
+ * =================== truthy Values
+ */
+
+/** Operators
+ * ----------------------------------
+ * ==== 1- [ +,-,*,/]
+ * ==== [+]
+ *       Number + Number ==> add
+ *       String + String ==> concat
+ * --------------------------------------
+ * === [-] Number - Number --> sub
+ *
+ */
+ /** and  ==> &&
+ * --------------------------
+ * == true && true ==> true
+ * == true && false ==> false
+ * == false && true ==> false
+ * == false && false ==> false
+ *--------------------------------
+ Or ||
+   == true || true ==> true
+   == true || false ==> true
+   == false || true ==> true
+   == false || false ==> false
+ --------------------------------
+ Not
+    true ==> false
+    false ==> true
+ */
+
+/**
+ *    == mona && ali    ==> ali
+ *    == true &&   ===> ali
+ * ------------------------------
+ *    == 0 && "alaa"  ==> 0
+ *       false &&     --> 0
+ *---------------------------------
+   ==== "mona" || "ali" ==> mona
+   ==== true  ---> mona
+   ----------------------------------
+    0 || undefined ==> undefined
+    8 || undefined ==> 8
+    undefined || "ali" ==> ali
+ *
+ *
+ */
+/**
+ *    [==] ==> (only values) -- js
+ *    [===] ==> (values && datatype)
+ */
+
+// coercion -- number
+//
+// var x = true; // true         as a number
+// var y = 0; // false           number
+// console.log(x == y); //false -- coercion -- automatic
+
+// var x = [1, 2]; // refencer type  == address
+
+// var y = [1, 2]; // rerncer == address
+
+// console.log(x == y); // false address == address
+
+// var x = "true"; // NaN == number
+
+// var y = true; // 1 === number
+
+// console.log(x == y);
