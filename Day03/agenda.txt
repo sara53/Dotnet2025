@@ -1,0 +1,6 @@
+== functions
+   == How js Execute func in memory
+   == Local Scope VS Global Scope
+   == Shadwing
+   == Object
+   == Math Object
