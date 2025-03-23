@@ -1,0 +1,55 @@
+== DOM (document Object Model)
+   == Add Element - Remove Element - Edit -- Change Content - Change Style
+/** How to select element from Dom
+ *--------------------- (Methods) ------------------------
+ 	== getElementById ==> Element | null
+ 	== querySelector ==> Element | null
+ 	== getElementsByClassName ==> Collection
+ 	== getElementsByTagName ==> Collection
+ 	== getElementsByName ==> Collection
+ 	== querySelectorAll ==> NodeList
+------------------------- (props) ---------------------------
+ * == document.body
+   == document.links
+   == document.images
+   == document.forms
+   == firstChild
+   == element.firstElementChild
+   == lastChild
+   == element.lastElementChild
+   == children  // return onle ElementChildren
+   == childNodes // return all children
+ */
+ /** How to change Content
+ *---------------------------
+ * == innerText
+ * == innerHTML
+ * == textConent (search)
+ *---------------- (input) -----------------
+	== value
+	== checked
+ */
+/**
+ * Chanage Style
+ * ----------------------------
+ * == style
+ * == className
+ * == classList
+ * 	== add
+ * 	== remove
+ * 	== toggle
+ *
+ */
+/**
+ * Attributes
+ * ---------------------------
+ *	== getAttribute
+	== setAttribute
+	== hasAttribute
+	== removeAttribute
+	== toggleAttribute
+ *
+ */
+
+== Events 
+   == Add attribute on Elements
