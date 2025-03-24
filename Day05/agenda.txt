@@ -1,0 +1,30 @@
+== Dom
+	= Element Creation
+	// <div>Hello dotnet</div>
+// appenChild([Node])
+/**
+ * (appendChild)
+ * -------------------------
+ * == accept only Node type
+ * == append only one child
+ * == return child
+ * --------------------------
+ * (append)
+ * ----------------------------
+ * == accept Node type Or String
+ * == accept more than on elemen on element
+ * == return undefined (by default)
+ * -------------------------------------------
+ * == insertAdjacentElement
+ */
+
+== Events
+	== Add attribute on element
+	== attach function on element
+	== addEventListener
+== BOM
+	== window --
+	== screen (self Study)
+	== navigator
+	== history
+	== location
