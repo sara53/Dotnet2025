@@ -1,0 +1,112 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+	background-color: #eee;
+	padding: 1rem;
+	margin: 0.5rem;
+}
+
+p {
+	background-color: #ccc;
+	padding: 0.75rem;
+	margin: 10px;
+}
+
+button {
+	width: 170px;
+	display: block;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	padding: 0.5rem 0.75rem;
+	background-color: rgb(7, 26, 68);
+	border-radius: 5px;
+	margin: 20px;
+}
+
+input[type="text"] {
+	margin: 20px;
+	display: block;
+	width: 200px;
+	padding: 10px;
+	border-radius: 5px;
+	outline: 0;
+	border: 1px solid #565353;
+}
+span#output {
+	margin-top: 20px;
+	display: inline-block;
+	font-size: 14px;
+}
+
+.info {
+	background-color: cadetblue;
+}
+
+.testData {
+	letter-spacing: 3px;
+}
+
+.jsClass {
+	background-color: #000;
+	color: #ddd;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+	margin: 20px;
+	color: #333;
+	font-weight: bold;
+}
+
+img {
+	width: 100px;
+}
+.link-item {
+	color: red;
+}
+
+.first {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(31, 8, 75);
+}
+.second {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(9, 90, 54);
+}
+.third {
+	width: 50px;
+	height: 50px;
+	background-color: rgb(223, 34, 75);
+}
+
+span {
+	display: block;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+
+span#link-message {
+	font-size: 20px;
+	color: green;
+	display: none;
+}
+
+span#output {
+	color: #444;
+}
+
+span#error {
+	color: red;
+	display: none;
+}

@@ -191,3 +191,15 @@
 // console.log(arr.shift());
 // console.log(arr);
 /** */
+
+ahmed == 1;
+sara == 0;
+// string iTI
+
+/**
+ * Yes === Not palindrome
+ * No == palindrome
+ *
+ *  ITI ===
+ *  Ali
+ */
