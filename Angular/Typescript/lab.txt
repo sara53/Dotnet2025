@@ -1,0 +1,19 @@
+--define an array with string and number values only
+-- write a function that accept an array of numbers or string
+- if all values are numbers -- return the sum
+- if all values are string -- return all values as a one string
+--if all values string or numbers -- return numbers only and sort them
+- - Create abstract class Shape , rectangle , circle extends from area ...
+-- create Interface IEmplyee id,fname,lname,age,salary,address:{city,street,zCode}
+-- create class Employee Implement IEmplyee -- getSalary
+-- create class Manager extened Employee -- show Employee Data (empId){show emp data};
+-- enum -- week days -- create function (day)==> {if(this day is a weekend or not)}
+
+// solid
+== Single Tone
+== Decorator Pattern
+== Observable Pattern
+== injection pattern
+
+========================================
+== https://dotnettutorials.net/course/dot-net-design-patterns/

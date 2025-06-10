@@ -25,3 +25,8 @@
 
 // sum(10, 20);
 // sum("mona", "ali", 12, true); // concat
+
+// test() // Error
+// test( 1, 2 ) == 3
+// test( "mona" ) // error
+// test(30,50,5050,70,7)//

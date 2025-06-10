@@ -1,0 +1,7 @@
+1- install nodejs
+2- install typescript
+(npm i -g typescript)
+
+3- run tsFiles 
+
+tsc fileName.ts -w

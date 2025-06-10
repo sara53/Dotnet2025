@@ -1,0 +1,252 @@
+/** datatype
+ * -------------------
+ * == string
+ * == number
+ * == boolean
+ * == undefined
+ * == null
+ * == any
+ * == Array
+ */
+
+// let fname: string = "ahmed";
+
+// let num: number = 10;
+// num = 30;
+// num = true;
+
+// let flag: boolean = "FDdfc";
+// console.log(flag);
+
+// var fname = "ali";
+
+// console.log(fname);
+
+// var fname: string;
+
+// fname = "alaa";
+
+// console.log(fname);
+
+// var fname: any = "mona";
+
+// fname = true;
+
+// fname = [];
+// fname = function () {};
+
+// var fname: string = 10;
+
+// console.log(fname);
+
+// union
+
+// var x: number | string | boolean = 10;
+// x = "mona";
+// x = "alaa";
+// x = true;
+// let x = 10;
+
+// x = "ali";
+
+// let arr: string[] = [x];
+
+// type stringOrNumber = string | number;
+
+// let x: stringOrNumber = 10;
+
+// let arr2: stringOrNumber[] = ["mona", 20];
+
+// let arr3: any[] = ["mona", true, 20];
+
+// let arr4: Array<string> = [];
+// arr4.push("alaa");
+//let arr5: Array<stringOrNumber> = [10];
+
+// let person: { fname: string; age: number };
+
+// person = { fname: "ali", age: 20 };
+
+// person.fname = 20;
+
+// let products: { id: number; name: string; price: number }[];
+
+// products = [
+// 	{
+// 		id: 1,
+// 		name: "Book",
+// 		price: 30,
+// 	},
+// 	{
+// 		id: 2,
+// 		name: "pen",
+// 		price: 30,
+// 	},
+// ];
+
+// let arr: any[] = [{id:2,fname:"aaa"}];
+
+
+
+// arr.push("ali");
+
+
+function sum(x: number, y: number): number | string {
+	return "ITI";
+}
+
+// sum();
+// sum(10);
+sum(10, 29);
+// sum("mona", "ahmed");
+// sum(10, 29, 40, 50);
+// function sayHello(): void {
+// 	console.log("Welcome dotnet");
+// }
+
+// sayHello();
+// function sum(x: number = 0, y: number = 0): void {
+// 	console.log("Welcome dotnet");
+// }
+
+// sum();
+// function sum(x: number, y?: number): number {
+// 	console.log("Welcome dotnet");
+// 	return x + y;
+// }
+
+// sum(10);
+// function sum(x: number, y: number, ...rest: string[]): void {
+// 	console.log("Welcome dotnet");
+// }
+
+// sum(10, 20, "40", "mona");
+
+/**======================================== */
+
+// let arr: (string | number)[] = ["mona", 10];
+
+// tuble
+// let arr: [string, number] = ["mona", 10];
+
+// function showData(fname: string, age: number) {}
+
+// showData(...arr); //Valid
+
+// showData("mona",10)
+
+// function sum<T>(x: T, y: T): number {
+// 	return 10;
+// }
+
+// sum<string>("mona", "ali");
+// sum<number>(10, 20);
+// sum<boolean>(true, true);
+// function sayHello(): void {
+// 	console.log("Welcome dotnet");
+// }
+// sayHello();
+// function sum(x: number = 0, y: number = 0): void {
+// 	console.log("Welcome dotnet");
+// }
+// sum();
+// function sum(x: number, y?: number): number {
+// 	console.log("Welcome dotnet");
+// 	return x + y;
+// }
+// sum(10);
+// function sum(x: number, y: number, ...rest: string[]): void {
+// 	console.log("Welcome dotnet");
+// }
+// sum(10, 20, "40", "mona");
+/**======================================== */
+// let arr: (string | number)[] = ["mona", 10];
+// tuble
+var arr = ["mona", 10];
+function showData(fname, age) { }
+showData.apply(void 0, arr); //Valid
+// showData("mona",10)
+// class Person {
+// 	fname: string;
+// 	age: number;
+// 	constructor(fname: string, age: number) {
+// 		this.fname = fname;
+// 		this.age = age;
+// 	}
+// 	display(): void {
+// 		console.log("PEt");
+// 	}
+// }
+console.log("===========================");
+class Person {
+	constructor(public fname: string, private age: number) {}
+
+	get getAge() {
+		return this.age;
+	}
+
+	set setAge(value: number) {
+		this.age = value;
+	}
+}
+
+let p1 = new Person("mona", 20);
+
+p1.setAge = 30; // set
+
+console.log(p1.getAge); // get
+
+// abstract class Person {
+// 	constructor(public fname: string, public age: number) {}
+
+// 	display(): void {
+// 		console.log("Person");
+// 	}
+// }
+
+// class User extends Person {
+// 	constructor(fname: string, age: number, public password: string) {
+// 		super(fname, age);
+// 	}
+// 	override display(): void {}
+// 	generatePassword() {}
+// }
+
+// let x = new User("mohamed", 20, "123");
+
+// x.display(); //
+
+// x.generatePassword();
+interface IProduct {
+	id: number;
+	name: string;
+	price: number;
+	imgSrc?: string;
+	// discount: (rate: number) => number;
+}
+interface IBox {
+	boxName: string;
+}
+
+let products: IProduct[] = [
+	{
+		id: 1,
+		name: "Book",
+		price: 20,
+	},
+];
+
+class Product implements IProduct, IBox {
+	constructor(
+		public id: number,
+		public name: string,
+		public price: number,
+		public boxName: string
+	) {}
+
+	discount(rate: number): number {
+		return this.price * rate;
+	}
+}
+
+class Pet extends Product {}
