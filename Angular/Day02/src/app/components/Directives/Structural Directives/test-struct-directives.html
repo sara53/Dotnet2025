@@ -1,0 +1,78 @@
+<!-- <div class="container p-5 mt-5">
+  <h1 class="text-center text-muted mb-3">Our Products</h1>
+  <div class="row">
+    @for (product of products; track product.id;) {
+    <div class="col-md-4 col-sm-6 g-3">
+      <div
+        class="rounded border p-3"
+        [ngClass]="{
+        'alert alert-success':$first
+      }"
+      >
+        <h2>{{product.name}}</h2>
+        <p class="lead fs-3">Price : {{product.price}}</p>
+
+        <p class="lead fs-3">First card : {{$first}}</p>
+        <p class="lead fs-3">Even card : {{$even}}</p>
+        <p class="lead fs-3">Odd card : {{$odd}}</p>
+      </div>
+    </div>
+
+    }@empty {
+    <div class="alert alert-warning">No Products Founded</div>
+    }
+  </div>
+</div> -->
+
+<!-- @IF -->
+<!-- <div class="container p-5 mt-5">
+  <h1>Login : {{flag}}</h1>
+
+  @if ( color == 'red') {
+  <p class="lead bg-danger mt-4 border p-3">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque, ullam
+    quibusdam, alias aspernatur soluta omnis minus officia beatae, eligendi
+    error! Pariatur recusandae velit iure nostrum nulla porro aliquid corporis.
+  </p>
+  } @else if(color == 'green') {
+  <div class="bg-success p-3">Green Block</div>
+  } @else if(color == 'blue') {
+  <div class="bg-primary p-3">blue Block</div>
+  }@else{
+  <div class="bg-warning">Else</div>
+  }
+
+  <button class="btn btn-dark mt-5" (click)="toggle()">Toggle</button>
+</div> -->
+<!-- @Switch -->
+<div class="container p-5 mt-5">
+  <h1>Login : {{flag}}</h1>
+
+  @switch (color) { @case ('red') {
+  <p class="lead bg-danger mt-4 border p-3">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque, ullam
+    quibusdam, alias aspernatur soluta omnis minus officia beatae, eligendi
+    error! Pariatur recusandae velit iure nostrum nulla porro aliquid corporis.
+  </p>
+  } @case ('green') {
+  <p class="lead bg-success mt-4 border p-3">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque, ullam
+    quibusdam, alias aspernatur soluta omnis minus officia beatae, eligendi
+    error! Pariatur recusandae velit iure nostrum nulla porro aliquid corporis.
+  </p>
+  } @case ('blue') {
+  <p class="lead bg-primary mt-4 border p-3">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque, ullam
+    quibusdam, alias aspernatur soluta omnis minus officia beatae, eligendi
+    error! Pariatur recusandae velit iure nostrum nulla porro aliquid corporis.
+  </p>
+  } @default {
+  <p class="lead bg-light mt-4 border p-3">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque, ullam
+    quibusdam, alias aspernatur soluta omnis minus officia beatae, eligendi
+    error! Pariatur recusandae velit iure nostrum nulla porro aliquid corporis.
+  </p>
+  } }
+
+  <button class="btn btn-dark mt-5" (click)="toggle()">Toggle</button>
+</div>

@@ -1,0 +1,32 @@
+<div class="container mt-5 p-4">
+  <h1 class="text-center text-muted mb-5">ITI Tracks</h1>
+  <div class="row mt-3">
+    <div class="col-md-3">
+      <select
+        name="departments"
+        id=""
+        class="form-select"
+        (change)="filter()"
+        [(ngModel)]="selectedDepartment"
+      >
+        <option>All</option>
+        <option>SD</option>
+        <option>Java</option>
+        <option>Graphics</option>
+        <option>Game</option>
+      </select>
+    </div>
+    <div class="col-md-9">
+      @for (track of filteredTracks; track track.id) {
+      <div class="alert alert-light p-3">
+        <h3>{{track.name}}</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+          enim?
+        </p>
+        <span class="bg-warning rounded p-1">{{track.department}}</span>
+      </div>
+      }
+    </div>
+  </div>
+</div>

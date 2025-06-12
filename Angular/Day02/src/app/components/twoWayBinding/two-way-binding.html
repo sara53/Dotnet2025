@@ -1,0 +1,24 @@
+<!-- <div class="container p-5 mt-5 alert alert-light">
+  <h2>Event Binding & Two Way Binding</h2>
+  <input
+    type="text"
+    (input)="getInputValue($event)"
+    class="form-control mt-4"
+    placeholder="Enter Data"
+  />
+  <button></button>
+  <p class="lead fs-3 mt-5">{{tempData}}</p>
+
+</div> -->
+<div class="container p-5 mt-5 alert alert-light">
+  <h2 #myH1>Event Binding & Two Way Binding</h2>
+  <input
+    type="text"
+    #myInput
+    (input)="getInputValue(myInput.value)"
+    class="form-control mt-4"
+    placeholder="Enter Data"
+  />
+  <p>{{tempData}}</p>
+  <!-- <button class="btn btn-dark mt-4" (click)="execute(myH1)">Click</button> -->
+</div>
