@@ -1,0 +1,13 @@
+<!-- <div class="container p-5 mt-5">
+  <h1>OrgName : {{orgName}}</h1>
+  <app-content (myEvent)="getData($event)" />
+  <h1>TrackName : {{trackName}}</h1>
+  <app-login [trackName]="trackName" />
+</div> -->
+<app-navbar [productCount]="productCount" />
+<div class="container p-5 mt-5">
+  <app-products (addProductEvent)="getProducts($event)" />
+</div>
+<!-- <div class="container p-5 mt-5">
+  <app-student-list />
+</div> -->

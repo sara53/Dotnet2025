@@ -1,0 +1,42 @@
+<div class="container alert alert-light p-5 mt-5">
+  <h1>Attribute Directives : {{flag}}</h1>
+  <div class="row">
+    <!-- <p class="col-sm-6 lead p-3 border my-4" [class.customBg]="flag">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, mollitia
+      natus! Minus repellendus, iusto est sequi cumque expedita esse ut tempore
+      eaque? Alias consectetur laboriosam iusto ex quaerat, sequi earum.
+    </p>
+    <p
+      class="col-sm-6 lead border my-4"
+      [ngClass]="{
+        customBg:flag,
+        'bg-success':color === 'red'
+        }"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, mollitia
+      natus! Minus repellendus, iusto est sequi cumque expedita esse ut tempore
+      eaque? Alias consectetur laboriosam iusto ex quaerat, sequi earum.
+    </p> -->
+    <p
+      class="col-sm-6 lead fw-bold border my-4"
+      [style.color]="flag?'red':'green'"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, mollitia
+      natus! Minus repellendus, iusto est sequi cumque expedita esse ut tempore
+      eaque? Alias consectetur laboriosam iusto ex quaerat, sequi earum.
+    </p>
+    <p
+      class="col-sm-6 lead fw-bold border my-4"
+      [ngStyle]="{
+        color:flag?'red':'green',
+        backgroundColor:flag?'#000':'blue'
+      }"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, mollitia
+      natus! Minus repellendus, iusto est sequi cumque expedita esse ut tempore
+      eaque? Alias consectetur laboriosam iusto ex quaerat, sequi earum.
+    </p>
+  </div>
+
+  <button (click)="toggle()" class="btn btn-dark">Toggle</button>
+</div>
