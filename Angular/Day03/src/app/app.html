@@ -4,10 +4,23 @@
   <h1>TrackName : {{trackName}}</h1>
   <app-login [trackName]="trackName" />
 </div> -->
-<app-navbar [productCount]="productCount" />
+<!-- <app-navbar [productCount]="productCount" />
 <div class="container p-5 mt-5">
   <app-products (addProductEvent)="getProducts($event)" />
-</div>
+</div> -->
 <!-- <div class="container p-5 mt-5">
   <app-student-list />
 </div> -->
+
+<div class="container p-5 mt-5">
+  <div class="border p-3" appScaleProduct>
+    <h1>Dummy Data</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam neque eum
+      aliquam nihil, perferendis ipsa? Nihil, obcaecati! Officia, doloremque,
+      rem fugit minima enim velit culpa dolorem facere animi veniam quos?
+    </p>
+  </div>
+
+  <p appScaleProduct class="alert alert-warning mt-5">Hello Dot net</p>
+</div>

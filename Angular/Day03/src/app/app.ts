@@ -6,10 +6,19 @@ import { Content } from './components/component interactions/content/content';
 import { createLinkedSignal } from '@angular/core/primitives/signals';
 import { Products } from './components/products/products';
 import { Navbar } from './components/navbar/navbar';
+import { ScaleProduct } from './custom-directives/scale-product';
 
 @Component({
   selector: 'app-root',
-  imports: [TestDir, Login, StudentList, Content, Products, Navbar],
+  imports: [
+    TestDir,
+    Login,
+    StudentList,
+    Content,
+    Products,
+    Navbar,
+    ScaleProduct,
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
