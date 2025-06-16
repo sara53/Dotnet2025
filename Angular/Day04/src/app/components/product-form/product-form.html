@@ -1,0 +1,63 @@
+<div class="container mt-5">
+  <h1 class="text-center text-muted mb-4">Add New Product</h1>
+  <form [formGroup]="productForm" (submit)="addNewProduct()">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Product Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputEmail1"
+        formControlName="name"
+        aria-describedby="emailHelp"
+        placeholder="Enter Product Name"
+      />
+
+      @if(getName.touched){ @if(getName.hasError('required')){
+      <div id="emailHelp" class="form-text text-danger">
+        Product Name is Required
+      </div>
+      } @if(getName.hasError('minlength')){
+      <div id="emailHelp" class="form-text text-danger">
+        Product Name length must be > 3
+      </div>
+      } }
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label"
+        >Enter Product Price</label
+      >
+      <input
+        type="text"
+        placeholder="Enter Product Price"
+        class="form-control"
+        formControlName="price"
+        id="exampleInputPassword1"
+      />
+      @if(getPrice.touched){ @if(getPrice.hasError('required')){
+      <div id="emailHelp" class="form-text text-danger">
+        Product Price is Required
+      </div>
+      } }
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword3" class="form-label"
+        >Enter Product Quantity</label
+      >
+      <input
+        type="text"
+        placeholder="Enter Product Quantity"
+        class="form-control"
+        formControlName="quantity"
+        id="exampleInputPassword3"
+      />
+      @if(getQuantity.touched){ @if(getQuantity.hasError('required')){
+      <div id="emailHelp" class="form-text text-danger">
+        Product Quantity is Required
+      </div>
+      } }
+    </div>
+    <p class="lead">{{productForm.value | json}}</p>
+
+    <button type="submit" class="btn btn-dark">Add new Product</button>
+  </form>
+</div>
