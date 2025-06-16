@@ -1,0 +1,9 @@
+<div class="container p-5 mt-5 border">
+  <h1 class="text-center text-muted">Our Products</h1>
+  <app-product-details
+    [product]="product"
+    [orgName]="orgName"
+    (myEvent)="getTrackName($event)"
+  />
+  <button class="btn btn-success mt-4" (click)="getOffer()">Get Offer</button>
+</div>

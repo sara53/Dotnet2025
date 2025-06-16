@@ -1,0 +1,16 @@
+<div class="alert alert-light p-3 mt-3">
+  <h2 #h2>Product Details : {{orgName}}</h2>
+  <p class="lead fs-3 mt-3">
+    Product Name : <strong class="text-success">{{product.name}}</strong>
+  </p>
+  @if(previousPrice){
+  <p class="lead fs-3 mt-3">
+    Previous Price :
+    <strong class="text-danger text-decoration-line-through"
+      >{{previousPrice}}</strong
+    >
+  </p>
+  }
+
+  <p class="lead fs-3 mt-3">Product Price : {{product.price}}</p>
+</div>
