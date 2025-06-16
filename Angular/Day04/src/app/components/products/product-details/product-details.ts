@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import {
   AfterContentInit,
   AfterViewInit,
@@ -12,16 +13,19 @@ import {
   SimpleChanges,
   ViewChild,
 } from '@angular/core';
+import { SharedCard } from '../../../shared/shared-card/shared-card';
+import { TruncatePipe } from '../../../custom/truncate-pipe';
 
 @Component({
   selector: 'app-product-details',
-  imports: [],
+  imports: [CommonModule, SharedCard, TruncatePipe],
   templateUrl: './product-details.html',
   styleUrl: './product-details.css',
 })
 export class ProductDetails
   implements OnInit, OnChanges, AfterViewInit, AfterContentInit, OnDestroy
 {
+  currentDate: Date = new Date();
   previousPrice: any;
   @ViewChild('h2') element!: ElementRef;
   constructor() {

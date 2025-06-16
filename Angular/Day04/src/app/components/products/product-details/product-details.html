@@ -1,16 +1,30 @@
-<div class="alert alert-light p-3 mt-3">
+<!-- <div class="alert alert-light p-3 mt-3">
   <h2 #h2>Product Details : {{orgName}}</h2>
   <p class="lead fs-3 mt-3">
-    Product Name : <strong class="text-success">{{product.name}}</strong>
+    Product Name :
+    <strong class="text-success">{{product.name | uppercase}}</strong>
+  </p>
+  <p class="lead fs-3 mt-3">
+    Title Case :
+    <strong class="text-success">{{"pet"| lowercase}}</strong>
   </p>
   @if(previousPrice){
   <p class="lead fs-3 mt-3">
     Previous Price :
     <strong class="text-danger text-decoration-line-through"
-      >{{previousPrice}}</strong
+      >{{previousPrice }}</strong
     >
   </p>
   }
 
-  <p class="lead fs-3 mt-3">Product Price : {{product.price}}</p>
-</div>
+  <p class="lead fs-3 mt-3">Product Price : {{product.price | currency}}</p>
+</div> -->
+
+<app-shared-card>
+  <p>{{"he" | truncate:5}}</p>
+  <p>{{"hello ya pet" | truncate:5}}</p>
+  <!-- <h1>{{"book" | uppercase}}</h1>
+  <h1>{{"BOOK" | lowercase}}</h1>
+  <h1>{{"BOOK" | titlecase}}</h1>
+  <h1>{{currentDate | date:"yyyy MM"}}</h1> -->
+</app-shared-card>
