@@ -1,0 +1,19 @@
+<app-shared>
+  <div class="bg-dark text-light p-5">
+    <h1 class="text-center text-warning">Product Details : {{productId}}</h1>
+
+    <p class="lead mt-3">Product Name : {{product?.name}}</p>
+    <p class="lead mt-3">Product Price : {{product?.price}}</p>
+    <p class="lead mt-3">Product Quantity : {{product?.quantity}}</p>
+    <div>
+      <i class="text-warning mx-1 fs-3 bi bi-star-fill"></i>
+      <i class="text-warning mx-1 fs-3 bi bi-star-fill"></i>
+      <i class="text-warning mx-1 fs-3 bi bi-star-fill"></i>
+      <i class="text-warning mx-1 fs-3 bi bi-star-fill"></i>
+      <i class="text-warning mx-1 fs-3 bi bi-star-fill"></i>
+    </div>
+    <button class="btn btn-info mt-4" [routerLink]="['/products']">
+      Back To Products
+    </button>
+  </div>
+</app-shared>
