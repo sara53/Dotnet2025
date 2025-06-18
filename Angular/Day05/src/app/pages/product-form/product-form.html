@@ -1,5 +1,7 @@
 <div class="container mt-5">
-  <h1 class="text-center text-muted mb-4">Add New Product</h1>
+  <h1 class="text-center text-muted mb-4">
+    {{productId == 0 ? "Add New Product":"Edit Product"}}
+  </h1>
   <form [formGroup]="productForm" (submit)="addNewProduct()">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Product Name</label>
@@ -58,6 +60,8 @@
     </div>
     <p class="lead">{{productForm.value | json}}</p>
 
-    <button type="submit" class="btn btn-dark">Add new Product</button>
+    <button type="submit" class="btn btn-dark">
+      {{productId == 0 ? "Add New Product":"Edit Product"}}
+    </button>
   </form>
 </div>

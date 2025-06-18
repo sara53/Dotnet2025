@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Shared } from '../../shared/shared';
 import { StaticProductService } from '../../services/static-product-service';
 import { IProduct } from '../../models/iproduct';
 import { ActivatedRoute, RouterLink } from '@angular/router';
+import { DynamicProductServices } from '../../services/dynamic-product-services';
 
 @Component({
   selector: 'app-product-details',
@@ -15,11 +16,17 @@ export class ProductDetails implements OnInit {
   productId!: string | null;
 
   constructor(
-    private productService: StaticProductService,
-    private activatedRoute: ActivatedRoute
+    private productService: DynamicProductServices,
+    private activatedRoute: ActivatedRoute,
+    private cdr: ChangeDetectorRef
   ) {}
   ngOnInit(): void {
     this.productId = this.activatedRoute.snapshot.paramMap.get('id');
-    this.product = this.productService.getProductById(this.productId);
+    this.productService.getProductById(this.productId).subscribe({
+      next: (response) => {
+        this.product = response;
+        this.cdr.detectChanges();
+      },
+    });
   }
 }
